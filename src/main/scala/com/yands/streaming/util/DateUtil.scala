@@ -134,8 +134,4 @@ object DateUtil {
     val date = new Date(time * 1000)
     sf.format(date);
   }
-  
-  def main(args: Array[String]): Unit = {
-    println(convertLong2StringFormat(1505986334, "HH"))
-  }
 }

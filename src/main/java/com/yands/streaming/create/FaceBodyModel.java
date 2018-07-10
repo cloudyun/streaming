@@ -5,19 +5,6 @@ import com.yands.streaming.vo.CaptureFace;
 
 public class FaceBodyModel {
 	
-	public static void main(String[] args) {
-		int seed = 10;
-		
-		ConstantsUtil.createRandom(seed);
-		System.out.println(ConstantsUtil.getNumber(vid.length, seed));;
-		
-		for (int x = 0; x < 100; x++) {
-			System.out.println(ConstantsUtil.getNumber(2, seed));
-		}
-//		System.out.println(vidScores.length);
-//		System.out.println(faceTags.length);
-	}
-	
 	public int seed = 0;
 	
 	private CaptureFace face;

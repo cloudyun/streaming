@@ -36,10 +36,4 @@ object Util {
         else x.toLong
       }.sorted
   }
-
-  def main(args: Array[String]): Unit = {
-    println("sort : " + sortArrToStr(JSON.parseArray("[2,1,3]")))
-    println("sort : " + sortArr(JSON.parseArray("[2,1,3]")))
-    println("sort : " + sortArr(null))
-  }
 }

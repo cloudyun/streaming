@@ -59,5 +59,4 @@ object StreamingManager {
   def getInstance(taskName: String): StreamingManager = {
     getInstance(taskName, 0l)
   }
-
 }

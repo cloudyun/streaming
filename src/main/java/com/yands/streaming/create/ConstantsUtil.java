@@ -8,7 +8,7 @@ import java.util.Random;
 /**  
  * @Title:  ConstantsUtil.java   
  * @Package com.posa.utils   
- * @Description:    TODO(用一句话描述该文件做什么)   
+ * @Description:    (用一句话描述该文件做什么)   
  * @author: gaoyun     
  * @edit by: 
  * @date:   2018年4月2日 上午9:41:22   

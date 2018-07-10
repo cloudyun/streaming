@@ -65,9 +65,8 @@ class MTDirectKafkaInputDStream[
         var i = currPartitions
         while (i < nextPartitions) {
            currentOffsets = currentOffsets + (TopicAndPartition(topic, i) -> 0)
-           val zkClient = new ZkClient(zkHost)
-           val zkPath = s"${_CaptureTopicDirs.consumerOffsetDir}/${i}"
-           ZkUtils.createPersistentPath(zkClient, zkPath, currentOffsets.toString)
+           //在zookeeper中创建上游kafka新增的分区并设置offset
+           ZkUtils.createPersistentPath(new ZkClient(zkHost), s"${_CaptureTopicDirs.consumerOffsetDir}/${i}", currentOffsets.toString)
            i = i + 1
         }
       }
